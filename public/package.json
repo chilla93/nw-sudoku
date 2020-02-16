@@ -1,4 +1,9 @@
 {
-    "name": "Sudoku",
-    "main": "index.html"
+  "name": "Sudoku",
+  "main": "http://0.0.0.0:3000/",
+  "node-remote": "http://*/*",
+  "chromium-args": "--mixed-context",
+  "webkit": {
+    "plugin": true
   }
+}

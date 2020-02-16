@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nw dist/",
-    "prestart": "npm run build",
-    "start-nw": "webpack-dev-server --open",
+    "start": "nw public/",
+    "prestart": "webpack-dev-server",
+    "start-web": "webpack-dev-server --open",
+    "debug": "node config/debug.config",
     "build": "webpack"
   },
   "keywords": [],
