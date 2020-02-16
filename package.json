@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nw public/",
-    "prestart": "webpack-dev-server",
+    "start": "node config/debug.config",
     "start-web": "webpack-dev-server --open",
     "debug": "node config/debug.config",
-    "build": "webpack"
+    "build:prod": "node config/prod.config"
   },
   "keywords": [],
   "author": "",

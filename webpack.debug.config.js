@@ -35,8 +35,8 @@ module.exports = {
   },
   plugins: [
     // new CopyPlugin([{
-    //   from: 'public/',
-    //   to: './'
+    //   from: './public/package.dev.json',
+    //   to: '../package.json'
     // }]),
     new webpack.HotModuleReplacementPlugin()
   ]
