@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node config/debug.config",
-    "start-web": "webpack-dev-server --open",
+    "start-web": "webpack-dev-server --config webpack.debug.config --open",
     "debug": "node config/debug.config",
     "build:prod": "node config/prod.config"
   },
@@ -21,6 +21,8 @@
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "nw": "0.43.4-sdk",
     "nw-builder": "3.5.7",
     "react-hot-loader": "^4.12.19",
@@ -30,6 +32,8 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "@material-ui/core": "^4.9.3",
+    "@material-ui/icons": "^4.9.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }
